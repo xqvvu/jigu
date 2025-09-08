@@ -7,6 +7,12 @@ const { locale } = useI18n<Schema, Locale>();
 
 <template>
   <UApp :locale="locales[locale]">
-    <RouterView />
+    <UContainer>
+      <RouterView v-slot="{ Component }">
+        <Transition name="fade">
+          <component :is="Component" />
+        </Transition>
+      </RouterView>
+    </UContainer>
   </UApp>
 </template>

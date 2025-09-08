@@ -8,12 +8,15 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
-    ExInput: typeof import('./src/components/ex-input.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     UApp: typeof import('./../../node_modules/@nuxt/ui/dist/runtime/components/App.vue')['default']
     UButton: typeof import('./../../node_modules/@nuxt/ui/dist/runtime/components/Button.vue')['default']
+    UContainer: typeof import('./../../node_modules/@nuxt/ui/dist/runtime/components/Container.vue')['default']
+    UForm: typeof import('./../../node_modules/@nuxt/ui/dist/runtime/components/Form.vue')['default']
+    UFormField: typeof import('./../../node_modules/@nuxt/ui/dist/runtime/components/FormField.vue')['default']
     UIcon: typeof import('./../../node_modules/@nuxt/ui/dist/runtime/vue/components/Icon.vue')['default']
     UInput: typeof import('./../../node_modules/@nuxt/ui/dist/runtime/components/Input.vue')['default']
+    USwitch: typeof import('./../../node_modules/@nuxt/ui/dist/runtime/components/Switch.vue')['default']
   }
 }

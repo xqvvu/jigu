@@ -13,10 +13,10 @@
     "@jigu/shared": "workspace:*",
     "@nuxt/ui": "^3.3.2",
     "@tailwindcss/vite": "^4.1.12",
-    "@ts-rest/core": "catalog:",
     "@types/qs": "catalog:",
     "@unhead/vue": "^2.0.14",
     "@vueuse/core": "^13.8.0",
+    "better-auth": "catalog:",
     "clsx": "^2.1.1",
     "consola": "catalog:",
     "pinia": "^3.0.3",
@@ -26,7 +26,8 @@
     "vue": "^3.5.18",
     "vue-draggable-plus": "^0.6.0",
     "vue-i18n": "^11.1.12",
-    "vue-router": "4"
+    "vue-router": "4",
+    "zod": "catalog:"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.1",

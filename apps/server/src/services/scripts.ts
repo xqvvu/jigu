@@ -5,7 +5,7 @@ import type {
 } from "@jigu/shared/schemas";
 import type { ScriptDocument } from "@/dal/types";
 import { scriptsDAL } from "@/dal/collections/scripts";
-import { BaseService } from "./base";
+import { BaseService } from "@/services/base";
 
 /**
  * Scripts service layer - handles business logic for script operations

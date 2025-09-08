@@ -1,23 +1,19 @@
-import path from "node:path";
 import process from "node:process";
 import consola from "consola";
 import { Hono } from "hono";
-import { initializeMongoClient } from "@/db/mongo";
-import { devLogger } from "@/middleware";
-import logs from "@/routes/logs";
+import { connectMongo } from "@/db/mongo";
 import v1 from "@/routes/v1";
-import { gracefulShutdown } from "@/shared/shutdown";
 
 const app = new Hono();
 
-app.use("*", devLogger);
-
-app.route("/api/v1", v1);
-app.route("/api/logs", logs);
-
-async function startServer() {
+async function main() {
   try {
-    await initializeMongoClient();
+    await connectMongo();
+
+    const { auth } = await import("@/libs/auth");
+
+    app.route("/api/v1", v1);
+    app.on(["POST", "GET"], "/api/auth/*", c => auth.handler(c.req.raw));
 
     const port = Bun.env.SERVER_PORT || 23002;
     const server = Bun.serve({
@@ -25,26 +21,17 @@ async function startServer() {
       port,
     });
 
-    // 注册服务器关闭到优雅退出服务
-    gracefulShutdown.registerCleanup(async () => {
-      consola.info("关闭 HTTP 服务器...");
-      server.stop();
-    }, "HTTP服务器");
-
-    await Bun.write(path.resolve(import.meta.dir, "../.pid"), `${process.pid}`);
-
-    consola.success(`服务器启动成功，端口: ${port}`);
-    consola.info("按 Ctrl+C 优雅退出服务");
+    consola.success(`Listen on http://localhost:${port}`);
 
     return server;
   }
   catch (error) {
-    consola.error("服务器启动失败:", error);
-    process.exit(1);
+    consola.error("Failed to start server:", error);
+    throw error;
   }
 }
 
-startServer().catch((error) => {
-  consola.error("启动过程中发生错误:", error);
+main().catch((error: unknown) => {
+  consola.error("Error occurred during start server:", error);
   process.exit(1);
 });

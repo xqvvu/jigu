@@ -5,14 +5,14 @@ import head from "@/plugins/head";
 import i18n from "@/plugins/i18n";
 import router from "@/router";
 import pinia from "@/stores";
-import "@/assets/main.css";
+import "@/assets/css/main.css";
 
 const app = createApp(App);
 
 app
-  .use(ui)
   .use(i18n)
   .use(head)
   .use(pinia)
   .use(router)
+  .use(ui)
   .mount("#app");

@@ -1,6 +1,6 @@
 import type { Collection, Filter, UpdateFilter, WithId } from "mongodb";
 import type { BaseDocument } from "@/dal/types";
-import type { CollectionName } from "@/shared/collection-names";
+import type { CollectionName } from "@/libs/collection-names";
 import { ObjectId } from "mongodb";
 import { getCollection } from "@/db/mongo";
 

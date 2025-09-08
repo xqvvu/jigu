@@ -6,5 +6,20 @@
       "consola.info($1);"
     ],
     "description": "consola log"
+  },
+
+  "vue": {
+    "scope": "vue",
+    "prefix": "setup",
+    "body": [
+      "<script setup lang=\"ts\">",
+      "$2",
+      "</script>",
+      "",
+      "<template>",
+      "$1",
+      "</template>",
+    ],
+    "description": "vue setup"
   }
 }

@@ -1,6 +1,6 @@
-import type { Result, TServiceCode } from "@jigu/shared/@types";
+import type { Result, TServiceCode } from "@jigu/shared";
 import type { Context } from "hono";
-import { HttpCode, ServiceCode } from "@jigu/shared/@types";
+import { HttpCode, ServiceCode } from "@jigu/shared";
 
 export class R {
   private constructor() {
@@ -20,7 +20,7 @@ export class R {
   static fail(
     ctx: Context,
     code: TServiceCode = ServiceCode.BAD_REQUEST,
-    message: string = "Something went wrong",
+    message: string = "Something failed",
   ) {
     ctx.status(HttpCode.BAD_REQUEST);
 

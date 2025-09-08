@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@import "@/assets/css/utilities.css";
+
+:root {
+  --ui-primary: black;
+  --ui-bg: var(--ui-color-neutral-50);
+  --ui-text: var(--ui-color-neutral-900);
+
+  --ui-my-bad: "#00fedd";
+}
+
+.dark {
+  --ui-primary: white;
+  --ui-bg: var(--ui-color-neutral-950);
+  --ui-text: var(--ui-color-neutral-50);
+  --ui-border: var(--ui-color-neutral-900);
+
+  --ui-my-bad: "#00fedd";
+}
+
+@theme {
+  --color-my-bad: var(--ui-my-bad);
+}

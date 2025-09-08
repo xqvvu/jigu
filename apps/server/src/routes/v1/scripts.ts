@@ -3,12 +3,12 @@ import { ServiceCode } from "@jigu/shared";
 import { CreateScriptSchema } from "@jigu/shared/schemas";
 import consola from "consola";
 import { Hono } from "hono";
+import { R } from "@/libs/utils";
 import { services } from "@/services";
-import { R } from "@/shared/utils";
 
 const scripts = new Hono();
 
-// 获取所有脚本
+// Get all scripts
 scripts.get("/", async (c) => {
   try {
     const { search } = c.req.query();
@@ -23,7 +23,7 @@ scripts.get("/", async (c) => {
   }
 });
 
-// 获取单个脚本
+// Get a single script
 scripts.get("/:id", async (c) => {
   try {
     const id = c.req.param("id");
@@ -41,7 +41,7 @@ scripts.get("/:id", async (c) => {
   }
 });
 
-// 创建新脚本
+// Create a new script
 scripts.post("/", zValidator("json", CreateScriptSchema), async (c) => {
   try {
     const body = c.req.valid("json");
@@ -60,7 +60,7 @@ scripts.post("/", zValidator("json", CreateScriptSchema), async (c) => {
   }
 });
 
-// 更新脚本
+// Update a script
 scripts.put("/:id", async (c) => {
   try {
     const id = c.req.param("id");
@@ -84,7 +84,7 @@ scripts.put("/:id", async (c) => {
   }
 });
 
-// 删除脚本
+// Delete a script
 scripts.delete("/:id", async (c) => {
   try {
     const id = c.req.param("id");
@@ -102,7 +102,7 @@ scripts.delete("/:id", async (c) => {
   }
 });
 
-// 获取脚本统计信息
+// Get script stats
 scripts.get("/stats/overview", async (c) => {
   try {
     const stats = await services.scripts.getScriptStats();

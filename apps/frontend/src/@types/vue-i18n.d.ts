@@ -1,5 +1,4 @@
 import type en from "#/en.json";
-import { DefineLocaleMessage } from "vue-i18n";
 
 type Messages = typeof en;
 

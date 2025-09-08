@@ -2,7 +2,7 @@ name: jigu
 
 services:
   mongo:
-    image: mongo:8.0.13-noble
+    image: mongo:8.0.13
     container_name: mongo
     ports:
       - 27017:27017

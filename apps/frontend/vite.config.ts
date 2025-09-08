@@ -37,6 +37,11 @@ export default defineConfig(({ mode }) => {
             "src/stores",
           ],
         },
+        ui: {
+          colors: {
+            neutral: "zinc",
+          },
+        },
       }),
       vueDevTools({
         launchEditor: "cursor",

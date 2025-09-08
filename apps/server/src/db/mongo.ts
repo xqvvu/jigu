@@ -1,36 +1,36 @@
 import type { Document } from "mongodb";
-import type { CollectionName } from "@/shared/collection-names";
+import type { CollectionName } from "@/libs/collection-names";
 import consola from "consola";
 import { MongoClient } from "mongodb";
-import { MONGO_COLLECTION_NAMES } from "@/shared/collection-names";
-import { gracefulShutdown } from "@/shared/shutdown";
+import { MONGO_COLLECTION_NAMES } from "@/libs/collection-names";
 
 let mongoClient: MongoClient | null = null;
 
-export async function initializeMongoClient() {
+export async function connectMongo() {
   try {
     if (!Bun.env.MONGODB_URI) {
       throw new Error("MONGODB_URI is required");
     }
 
+    if (mongoClient) {
+      return mongoClient;
+    }
+
     mongoClient = new MongoClient(Bun.env.MONGODB_URI);
     await mongoClient.connect();
-    consola.success("已连接到 MongoDB");
-
-    // 注册关闭清理函数到优雅退出服务
-    gracefulShutdown.registerCleanup(closeMongoClient, "MongoDB 连接");
+    consola.success("MongoDB has been connected");
 
     return mongoClient;
   }
   catch (error) {
-    consola.error("连接 MongoDB 失败:", error);
+    consola.error("Failed to connect to MongoDB:", error);
     throw error;
   }
 }
 
 export function getMongo(): MongoClient {
   if (!mongoClient) {
-    throw new Error("MongoDB client 未初始化. 请先调用 initializeDatabase()");
+    throw new Error("MongoDB client is not initialized. Please call initializeDatabase() first");
   }
 
   return mongoClient;
@@ -49,10 +49,10 @@ export async function closeMongoClient() {
     try {
       await mongoClient.close();
       mongoClient = null;
-      consola.success("MongoDB client 已关闭");
+      consola.success("MongoDB client has been closed");
     }
     catch (error) {
-      consola.error("关闭 MongoDB client 失败:", error);
+      consola.error("Failed to close MongoDB client:", error);
       throw error;
     }
   }
