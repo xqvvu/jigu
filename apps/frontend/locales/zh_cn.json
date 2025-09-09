@@ -1,6 +1,9 @@
 {
   "common": {
-    "welcome": "欢迎来到叽咕",
-    "token": "令牌"
+  },
+
+  "auth": {
+    "sign-in": "登录",
+    "sign-out": "退出登录"
   }
 }

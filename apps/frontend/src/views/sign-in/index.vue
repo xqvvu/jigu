@@ -1,65 +1,72 @@
 <script setup lang="ts">
+import type { SignInInput } from "@jigu/shared/schemas";
 import type { FormSubmitEvent } from "@nuxt/ui";
-import { z } from "zod";
+import { SignInInputSchema } from "@jigu/shared/schemas";
 import { authClient } from "@/libs/auth-client";
 
-const toast = useToast();
+const { t } = useI18n();
 
-const schema = z.object({
-  email: z.email(),
-  password: z.string().min(8),
-});
-
-type Schema = z.output<typeof schema>;
-
-const state = reactive<Partial<Schema>>({});
-
-async function onSubmit(event: FormSubmitEvent<Schema>) {
-  toast.add({
-    title: "Success",
-    description: "The form has been submitted.",
-    color: "success",
-  });
-  consola.info(event.data);
-
-  await authClient.signUp.email(
-    {
-      name: event.data.email,
-      email: event.data.email, // user email address
-      password: event.data.password, // user password -> min 8 characters by default
-    },
-  );
+const signInState = reactive<Partial<SignInInput>>({});
+async function onSignIn(event: FormSubmitEvent<SignInInput>) {
+  const { email, password } = event.data;
+  await authClient.signIn.email({ email, password });
 }
 </script>
 
 <template>
-  <div>
-    <UForm
-      class="space-y-4"
-      :schema="schema"
-      :state="state"
-      @submit="onSubmit"
-    >
-      <UFormField
-        label="Email"
-        name="email"
+  <div class="mx-auto w-fit">
+    <section class="flex gap-4 items-center">
+      <UForm
+        class="space-y-4"
+        loading-auto
+        :schema="SignInInputSchema"
+        :state="signInState"
+        @submit="onSignIn"
       >
-        <UInput v-model="state.email" />
-      </UFormField>
+        <UFormField
+          label="Email"
+          name="email"
+        >
+          <UInput
+            v-model="signInState.email"
+            placeholder="Type your email..."
+            :ui="{ trailing: 'pe-1' }"
+          >
+            <template
+              v-if="signInState.email"
+              #trailing
+            >
+              <UButton
+                color="neutral"
+                icon="i-lucide-circle-x"
+                size="sm"
+                variant="link"
+                @click="signInState.email = undefined"
+              />
+            </template>
+          </UInput>
+        </UFormField>
 
-      <UFormField
-        label="Password"
-        name="password"
-      >
-        <UInput
-          v-model="state.password"
-          type="password"
-        />
-      </UFormField>
+        <UFormField
+          label="Password"
+          name="password"
+        >
+          <UInput
+            v-model="signInState.password"
+            type="password"
+          />
+        </UFormField>
 
-      <UButton type="submit">
-        Submit
+        <UButton type="submit">
+          {{ t("auth.sign-in") }}
+        </UButton>
+      </UForm>
+
+      <UButton @click="authClient.signOut()">
+        {{ t("auth.sign-out") }}
       </UButton>
-    </UForm>
+
+      <span class="font-normal text-sm hover:scale-110 cursor-default transition-all">{{ t("auth.sign-out") }}</span>
+    </section>
   </div>
 </template>
