@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "@jigu/utils": ["packages/shared/utils/index.ts"]
+      "@jigu/utils": ["packages/utils/src/index.ts"]
     }
   }
 }

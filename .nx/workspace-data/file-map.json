@@ -3,74 +3,95 @@
   "nxVersion": "21.5.2",
   "pathMappings": {
     "@jigu/utils": [
-      "packages/shared/utils/index.ts"
+      "packages/utils/src/index.ts"
     ]
   },
   "nxJsonPlugins": [],
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "tsconfig.base.json",
-        "hash": "6610764501079502806"
-      },
-      {
-        "file": "tsconfig.json",
-        "hash": "16951669120957300575"
-      },
-      {
-        "file": ".npmrc",
-        "hash": "7307686442308936057"
-      },
-      {
-        "file": ".vscode/settings.json",
-        "hash": "8239340027845422787"
-      },
-      {
-        "file": "package.json",
-        "hash": "1319664586415948544"
-      },
-      {
-        "file": "pnpm-workspace.yaml",
-        "hash": "11719192314601001269"
+        "file": ".cursor/rules/code-style.mdc",
+        "hash": "8814559059722405341"
       },
       {
         "file": ".cursor/rules/frontend-instruments.mdc",
         "hash": "1495580030978316253"
       },
       {
-        "file": "pnpm-lock.yaml",
-        "hash": "6638217587289589171"
-      },
-      {
-        "file": ".cursor/rules/code-style.mdc",
-        "hash": "8814559059722405341"
+        "file": ".editorconfig",
+        "hash": "10885606913955379210"
       },
       {
         "file": ".gitignore",
         "hash": "3943487911929642792"
       },
       {
+        "file": ".node-version",
+        "hash": "541564060168964990"
+      },
+      {
+        "file": ".npmrc",
+        "hash": "7307686442308936057"
+      },
+      {
         "file": ".vscode/extensions.json",
         "hash": "3593265890769120670"
       },
       {
-        "file": "eslint.config.ts",
-        "hash": "15316166749996047629"
-      },
-      {
-        "file": ".editorconfig",
-        "hash": "10885606913955379210"
+        "file": ".vscode/settings.json",
+        "hash": "8239340027845422787"
       },
       {
         "file": ".vscode/workspace.code-snippets",
         "hash": "16022189834221088637"
       },
       {
+        "file": "eslint.config.ts",
+        "hash": "15316166749996047629"
+      },
+      {
         "file": "nx.json",
         "hash": "18336426213955174907"
+      },
+      {
+        "file": "package.json",
+        "hash": "11988993950785948595"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "9869300780604595246"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "11719192314601001269"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "16241475661763792980"
+      },
+      {
+        "file": "tsconfig.json",
+        "hash": "16951669120957300575"
       }
     ],
     "projectFileMap": {
+      "@jigu/shared": [
+        {
+          "file": "packages/@types/index.ts",
+          "hash": "10568224572829819391"
+        },
+        {
+          "file": "packages/@types/package.json",
+          "hash": "1435646408429236699",
+          "deps": [
+            "npm:zod"
+          ]
+        },
+        {
+          "file": "packages/@types/src/index.ts",
+          "hash": "14977510232006590264"
+        }
+      ],
       "utils": [
         {
           "file": "packages/utils/eslint.config.ts",
@@ -94,6 +115,98 @@
         {
           "file": "packages/utils/tsconfig.json",
           "hash": "3244421341483603138"
+        }
+      ],
+      "server": [
+        {
+          "file": "apps/server/.gitignore",
+          "hash": "12634402967133909834"
+        },
+        {
+          "file": "apps/server/.prettierrc",
+          "hash": "4808572120966128913"
+        },
+        {
+          "file": "apps/server/README.md",
+          "hash": "10741870943097893083"
+        },
+        {
+          "file": "apps/server/eslint.config.mjs",
+          "hash": "341460240617997069"
+        },
+        {
+          "file": "apps/server/nest-cli.json",
+          "hash": "789240945379598733"
+        },
+        {
+          "file": "apps/server/package.json",
+          "hash": "797973170719626214",
+          "deps": [
+            "npm:@eslint/eslintrc",
+            "npm:@eslint/js",
+            "npm:@nestjs/cli",
+            "npm:@nestjs/schematics",
+            "npm:@nestjs/testing",
+            "npm:@types/express",
+            "npm:@types/jest",
+            "npm:@types/node@22.18.4",
+            "npm:@types/supertest",
+            "npm:eslint",
+            "npm:eslint-config-prettier",
+            "npm:eslint-plugin-prettier",
+            "npm:globals@16.4.0",
+            "npm:jest",
+            "npm:prettier",
+            "npm:source-map-support@0.5.21",
+            "npm:supertest",
+            "npm:ts-jest",
+            "npm:ts-loader",
+            "npm:ts-node",
+            "npm:tsconfig-paths",
+            "npm:typescript",
+            "npm:typescript-eslint",
+            "npm:@nestjs/common",
+            "npm:@nestjs/core",
+            "npm:@nestjs/platform-express",
+            "npm:reflect-metadata",
+            "npm:rxjs@7.8.2"
+          ]
+        },
+        {
+          "file": "apps/server/src/app.controller.spec.ts",
+          "hash": "2727664763654384995"
+        },
+        {
+          "file": "apps/server/src/app.controller.ts",
+          "hash": "4552329938751326480"
+        },
+        {
+          "file": "apps/server/src/app.module.ts",
+          "hash": "11673476679848632172"
+        },
+        {
+          "file": "apps/server/src/app.service.ts",
+          "hash": "16892833931858030153"
+        },
+        {
+          "file": "apps/server/src/main.ts",
+          "hash": "6783086878492621953"
+        },
+        {
+          "file": "apps/server/test/app.e2e-spec.ts",
+          "hash": "7164584812487523395"
+        },
+        {
+          "file": "apps/server/test/jest-e2e.json",
+          "hash": "7570273541430074424"
+        },
+        {
+          "file": "apps/server/tsconfig.build.json",
+          "hash": "276845246908739715"
+        },
+        {
+          "file": "apps/server/tsconfig.json",
+          "hash": "13757859475919901779"
         }
       ],
       "@jigu/frontend": [
@@ -137,7 +250,7 @@
           "file": "apps/frontend/package.json",
           "hash": "6344497520835118340",
           "deps": [
-            "npm:@types/node",
+            "npm:@types/node@24.4.0",
             "npm:@vitejs/plugin-vue",
             "npm:@vue/tsconfig",
             "npm:vite",
@@ -147,7 +260,7 @@
             "npm:@nuxt/ui",
             "npm:@tailwindcss/vite",
             "npm:@unhead/vue",
-            "npm:@vueuse/core@13.9.0",
+            "npm:@vueuse/core",
             "npm:better-auth",
             "npm:clsx",
             "npm:consola",
@@ -249,25 +362,8 @@
           "file": "apps/frontend/vite.config.ts",
           "hash": "12631818140514467130"
         }
-      ],
-      "@jigu/shared": [
-        {
-          "file": "packages/@types/index.ts",
-          "hash": "10568224572829819391"
-        },
-        {
-          "file": "packages/@types/package.json",
-          "hash": "1435646408429236699",
-          "deps": [
-            "npm:zod"
-          ]
-        },
-        {
-          "file": "packages/@types/src/index.ts",
-          "hash": "14977510232006590264"
-        }
       ]
     }
   },
-  "externalNodesHash": "10604881583699606981"
+  "externalNodesHash": "7525692035539777163"
 }

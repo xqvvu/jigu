@@ -1,18 +1,18 @@
 {
   "run": {
-    "command": "nx dev frontend",
-    "startTime": "2025-09-14T16:48:27.506Z",
-    "endTime": "2025-09-14T16:50:00.385Z",
+    "command": "nx start:dev server",
+    "startTime": "2025-09-16T10:09:10.780Z",
+    "endTime": "2025-09-16T10:09:28.300Z",
     "inner": false
   },
   "tasks": [
     {
-      "taskId": "@jigu/frontend:dev",
-      "target": "dev",
-      "projectName": "@jigu/frontend",
-      "hash": "14729537892958038246",
-      "startTime": "2025-09-14T16:48:27.536Z",
-      "endTime": "2025-09-14T16:50:00.384Z",
+      "taskId": "server:start:dev",
+      "target": "start:dev",
+      "projectName": "server",
+      "hash": "14538809222467932709",
+      "startTime": "2025-09-16T10:09:10.808Z",
+      "endTime": "2025-09-16T10:09:28.297Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 1
