@@ -1,0 +1,273 @@
+{
+  "version": "6.0",
+  "nxVersion": "21.5.2",
+  "pathMappings": {
+    "@jigu/utils": [
+      "packages/shared/utils/index.ts"
+    ]
+  },
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": "tsconfig.base.json",
+        "hash": "6610764501079502806"
+      },
+      {
+        "file": "tsconfig.json",
+        "hash": "16951669120957300575"
+      },
+      {
+        "file": ".npmrc",
+        "hash": "7307686442308936057"
+      },
+      {
+        "file": ".vscode/settings.json",
+        "hash": "8239340027845422787"
+      },
+      {
+        "file": "package.json",
+        "hash": "1319664586415948544"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "11719192314601001269"
+      },
+      {
+        "file": ".cursor/rules/frontend-instruments.mdc",
+        "hash": "1495580030978316253"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "6638217587289589171"
+      },
+      {
+        "file": ".cursor/rules/code-style.mdc",
+        "hash": "8814559059722405341"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "3943487911929642792"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "3593265890769120670"
+      },
+      {
+        "file": "eslint.config.ts",
+        "hash": "15316166749996047629"
+      },
+      {
+        "file": ".editorconfig",
+        "hash": "10885606913955379210"
+      },
+      {
+        "file": ".vscode/workspace.code-snippets",
+        "hash": "16022189834221088637"
+      },
+      {
+        "file": "nx.json",
+        "hash": "18336426213955174907"
+      }
+    ],
+    "projectFileMap": {
+      "utils": [
+        {
+          "file": "packages/utils/eslint.config.ts",
+          "hash": "15316166749996047629"
+        },
+        {
+          "file": "packages/utils/package.json",
+          "hash": "10196016836628547658",
+          "deps": [
+            "npm:uuid"
+          ]
+        },
+        {
+          "file": "packages/utils/src/index.ts",
+          "hash": "16658498603630237118"
+        },
+        {
+          "file": "packages/utils/src/uuid.ts",
+          "hash": "3738960194972291837"
+        },
+        {
+          "file": "packages/utils/tsconfig.json",
+          "hash": "3244421341483603138"
+        }
+      ],
+      "@jigu/frontend": [
+        {
+          "file": "apps/frontend/.env.development",
+          "hash": "15775223552605183977"
+        },
+        {
+          "file": "apps/frontend/.env.example",
+          "hash": "18363433492629696771"
+        },
+        {
+          "file": "apps/frontend/README.md",
+          "hash": "16028011462273463162"
+        },
+        {
+          "file": "apps/frontend/auto-imports.d.ts",
+          "hash": "8753009946564011357"
+        },
+        {
+          "file": "apps/frontend/components.d.ts",
+          "hash": "11726098369396988120"
+        },
+        {
+          "file": "apps/frontend/eslint.config.ts",
+          "hash": "6612843678937560882"
+        },
+        {
+          "file": "apps/frontend/index.html",
+          "hash": "11195400469556701847"
+        },
+        {
+          "file": "apps/frontend/locales/en.json",
+          "hash": "5654156240429717196"
+        },
+        {
+          "file": "apps/frontend/locales/zh_cn.json",
+          "hash": "9515394253692593385"
+        },
+        {
+          "file": "apps/frontend/package.json",
+          "hash": "6344497520835118340",
+          "deps": [
+            "npm:@types/node",
+            "npm:@vitejs/plugin-vue",
+            "npm:@vue/tsconfig",
+            "npm:vite",
+            "npm:vite-plugin-vue-devtools",
+            "npm:vue-tsc",
+            "@jigu/shared",
+            "npm:@nuxt/ui",
+            "npm:@tailwindcss/vite",
+            "npm:@unhead/vue",
+            "npm:@vueuse/core@13.9.0",
+            "npm:better-auth",
+            "npm:clsx",
+            "npm:consola",
+            "npm:pinia",
+            "npm:pinia-plugin-persistedstate",
+            "npm:tailwindcss",
+            "npm:vue",
+            "npm:vue-draggable-plus",
+            "npm:vue-i18n",
+            "npm:vue-router",
+            "npm:zod"
+          ]
+        },
+        {
+          "file": "apps/frontend/public/vite.svg",
+          "hash": "16046085400642193116"
+        },
+        {
+          "file": "apps/frontend/src/@types/vue-i18n.d.ts",
+          "hash": "17600406208634729997"
+        },
+        {
+          "file": "apps/frontend/src/app.vue",
+          "hash": "7085922935164704406"
+        },
+        {
+          "file": "apps/frontend/src/assets/css/main.css",
+          "hash": "17102801304822252511"
+        },
+        {
+          "file": "apps/frontend/src/assets/css/utilities.css",
+          "hash": "10414893866440857887"
+        },
+        {
+          "file": "apps/frontend/src/components/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/frontend/src/composables/use-completions.ts",
+          "hash": "3893758739643635204"
+        },
+        {
+          "file": "apps/frontend/src/composables/use-fetch.ts",
+          "hash": "6134101150745497881"
+        },
+        {
+          "file": "apps/frontend/src/libs/auth-client.ts",
+          "hash": "6643439526651394717"
+        },
+        {
+          "file": "apps/frontend/src/main.ts",
+          "hash": "1838258008090765425"
+        },
+        {
+          "file": "apps/frontend/src/plugins/head.ts",
+          "hash": "5724626356299449645"
+        },
+        {
+          "file": "apps/frontend/src/plugins/i18n.ts",
+          "hash": "5822009594168163849"
+        },
+        {
+          "file": "apps/frontend/src/router/index.ts",
+          "hash": "8728751141071427784"
+        },
+        {
+          "file": "apps/frontend/src/stores/index.ts",
+          "hash": "15185922944941978895"
+        },
+        {
+          "file": "apps/frontend/src/stores/modules/auth.ts",
+          "hash": "7089970430516331283"
+        },
+        {
+          "file": "apps/frontend/src/views/home/index.vue",
+          "hash": "5623208425129706872"
+        },
+        {
+          "file": "apps/frontend/src/views/sign-in/index.vue",
+          "hash": "583619122085571679"
+        },
+        {
+          "file": "apps/frontend/src/vite-env.d.ts",
+          "hash": "11937410450360627455"
+        },
+        {
+          "file": "apps/frontend/tsconfig.app.json",
+          "hash": "10341360755974297914"
+        },
+        {
+          "file": "apps/frontend/tsconfig.json",
+          "hash": "2051545989150293483"
+        },
+        {
+          "file": "apps/frontend/tsconfig.node.json",
+          "hash": "6148819206808486700"
+        },
+        {
+          "file": "apps/frontend/vite.config.ts",
+          "hash": "12631818140514467130"
+        }
+      ],
+      "@jigu/shared": [
+        {
+          "file": "packages/@types/index.ts",
+          "hash": "10568224572829819391"
+        },
+        {
+          "file": "packages/@types/package.json",
+          "hash": "1435646408429236699",
+          "deps": [
+            "npm:zod"
+          ]
+        },
+        {
+          "file": "packages/@types/src/index.ts",
+          "hash": "14977510232006590264"
+        }
+      ]
+    }
+  },
+  "externalNodesHash": "10604881583699606981"
+}

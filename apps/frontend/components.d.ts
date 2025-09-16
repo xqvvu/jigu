@@ -10,13 +10,7 @@ declare module 'vue' {
   export interface GlobalComponents {
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    UApp: typeof import('./../../node_modules/@nuxt/ui/dist/runtime/components/App.vue')['default']
-    UButton: typeof import('./../../node_modules/@nuxt/ui/dist/runtime/components/Button.vue')['default']
-    UContainer: typeof import('./../../node_modules/@nuxt/ui/dist/runtime/components/Container.vue')['default']
-    UForm: typeof import('./../../node_modules/@nuxt/ui/dist/runtime/components/Form.vue')['default']
-    UFormField: typeof import('./../../node_modules/@nuxt/ui/dist/runtime/components/FormField.vue')['default']
-    UIcon: typeof import('./../../node_modules/@nuxt/ui/dist/runtime/vue/components/Icon.vue')['default']
-    UInput: typeof import('./../../node_modules/@nuxt/ui/dist/runtime/components/Input.vue')['default']
-    USwitch: typeof import('./../../node_modules/@nuxt/ui/dist/runtime/components/Switch.vue')['default']
+    UApp: typeof import('./../../node_modules/.pnpm/@nuxt+ui@3.3.3_@babel+parser@7.28.4_axios@1.12.2_change-case@5.4.4_embla-carousel@8.6.0_1d833f0a86fff6336297b1aa71879900/node_modules/@nuxt/ui/dist/runtime/components/App.vue')['default']
+    UContainer: typeof import('./../../node_modules/.pnpm/@nuxt+ui@3.3.3_@babel+parser@7.28.4_axios@1.12.2_change-case@5.4.4_embla-carousel@8.6.0_1d833f0a86fff6336297b1aa71879900/node_modules/@nuxt/ui/dist/runtime/components/Container.vue')['default']
   }
 }

@@ -51,11 +51,9 @@ export default defineConfig(({ mode }) => {
     resolve: {
       alias: {
         "@": path.resolve(import.meta.dirname, "src"),
-        "#": path.resolve(import.meta.dirname, "locales"),
+        "@jigu/frontend/locales": path.resolve(import.meta.dirname, "locales"),
       },
     },
-
-    cacheDir: path.resolve(import.meta.dirname, "../../node_modules/.vite"),
 
     server: {
       open: true,

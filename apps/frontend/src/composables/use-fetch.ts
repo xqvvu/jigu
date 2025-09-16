@@ -1,5 +1,4 @@
-import type { Result } from "@jigu/shared/@types";
-import { ServiceCode } from "@jigu/shared/@types";
+import type { Result } from "@jigu/shared";
 import { createFetch } from "@vueuse/core";
 
 const AUTH_WHITE_LIST: string[] = [
@@ -30,7 +29,7 @@ export const useFetch = createFetch({
       }
 
       const res = ctx.data as Result;
-      if (res.code !== ServiceCode.OK) {
+      if (res.code !== "OK") {
         throw res.code;
       }
 

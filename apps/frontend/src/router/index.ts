@@ -17,6 +17,7 @@ const routes: Parameters<typeof createRouter>[0]["routes"] = [
       auth: false,
     },
   },
+
 ];
 
 const router = createRouter({

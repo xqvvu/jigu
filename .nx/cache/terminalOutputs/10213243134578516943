@@ -1,0 +1,223 @@
+
+> @jigu/frontend@0.0.0 dev
+> vite
+
+[1G[0K
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J
+  [32m[1mVITE[22m v7.1.5[39m  [2mready in [0m[1m1312[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m23001[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.31.168:[1m23001[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://198.18.0.1:[1m23001[22m/[39m
+  [32m➜[39m  [1mVue DevTools[22m: [32mOpen [36mhttp://localhost:[1m23001[22m/__devtools__/[32m as a separate window[39m
+  [32m➜[39m  [1mVue DevTools[22m: [32mPress [33mOption(⌥)[2m+[22mShift(⇧)[2m+[22mD[32m in App to toggle the Vue DevTools[39m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+[31m(!) Failed to run dependency scan. Skipping dependency pre-bundling. Error: The following dependencies are imported but could not be resolved:
+
+  [36m@jigu/frontend/locales/en.json[31m [37m[2m(imported by /Users/chuanhu9/devs/jigu/apps/frontend/src/plugins/i18n.ts)[22m[31m
+  [36m@jigu/frontend/locales/zh_cn.json[31m [37m[2m(imported by /Users/chuanhu9/devs/jigu/apps/frontend/src/plugins/i18n.ts)[22m[31m
+  [36m@jigu/shared/schemas[31m [37m[2m(imported by /Users/chuanhu9/devs/jigu/apps/frontend/src/views/sign-in/index.vue?id=0)[22m[31m
+
+Are they installed?
+    at file:///Users/chuanhu9/devs/jigu/node_modules/.pnpm/vite@7.1.5_@types+node@24.4.0_jiti@2.5.1_lightningcss@1.30.1_yaml@2.8.1/node_modules/vite/dist/node/chunks/dep-M_KD0XSK.js:11130:33
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async file:///Users/chuanhu9/devs/jigu/node_modules/.pnpm/vite@7.1.5_@types+node@24.4.0_jiti@2.5.1_lightningcss@1.30.1_yaml@2.8.1/node_modules/vite/dist/node/chunks/dep-M_KD0XSK.js:34823:15[39m
+[2m12:47:45 AM[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to resolve import "@jigu/frontend/locales/en.json" from "src/plugins/i18n.ts". Does the file exist?
+  Plugin: [35mvite:import-analysis[39m
+  File: [36m/Users/chuanhu9/devs/jigu/apps/frontend/src/plugins/i18n.ts[39m:1:15
+[33m  1  |  import en from "@jigu/frontend/locales/en.json";
+     |                  ^
+  2  |  import zh_cn from "@jigu/frontend/locales/zh_cn.json";
+  3  |  import { createI18n } from "vue-i18n";[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:47:45 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/assets/css/main.css[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:47:45 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/assets/css/main.css[22m [33m(x2)[39m
+[2m12:47:45 AM[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to resolve import "@jigu/frontend/locales/en.json" from "src/plugins/i18n.ts". Does the file exist?
+  Plugin: [35mvite:import-analysis[39m
+  File: [36m/Users/chuanhu9/devs/jigu/apps/frontend/src/plugins/i18n.ts[39m:1:15
+[33m  1  |  import en from "@jigu/frontend/locales/en.json";
+     |                  ^
+  2  |  import zh_cn from "@jigu/frontend/locales/zh_cn.json";
+  3  |  import { createI18n } from "vue-i18n";[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:47:45 AM[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "@jigu/frontend/locales/en.json" from "src/plugins/i18n.ts". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36m/Users/chuanhu9/devs/jigu/apps/frontend/src/plugins/i18n.ts[39m:1:15
+[33m  1  |  import en from "@jigu/frontend/locales/en.json";
+     |                  ^
+  2  |  import zh_cn from "@jigu/frontend/locales/zh_cn.json";
+  3  |  import { createI18n } from "vue-i18n";[39m
+      at TransformPluginContext._formatLog (file:///Users/chuanhu9/devs/jigu/node_modules/.pnpm/vite@7.1.5_@types+node@24.4.0_jiti@2.5.1_lightningcss@1.30.1_yaml@2.8.1/node_modules/vite/dist/node/chunks/dep-M_KD0XSK.js:31527:43)
+      at TransformPluginContext.error (file:///Users/chuanhu9/devs/jigu/node_modules/.pnpm/vite@7.1.5_@types+node@24.4.0_jiti@2.5.1_lightningcss@1.30.1_yaml@2.8.1/node_modules/vite/dist/node/chunks/dep-M_KD0XSK.js:31524:14)
+      at normalizeUrl (file:///Users/chuanhu9/devs/jigu/node_modules/.pnpm/vite@7.1.5_@types+node@24.4.0_jiti@2.5.1_lightningcss@1.30.1_yaml@2.8.1/node_modules/vite/dist/node/chunks/dep-M_KD0XSK.js:29996:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///Users/chuanhu9/devs/jigu/node_modules/.pnpm/vite@7.1.5_@types+node@24.4.0_jiti@2.5.1_lightningcss@1.30.1_yaml@2.8.1/node_modules/vite/dist/node/chunks/dep-M_KD0XSK.js:30054:32
+      at async Promise.all (index 0)
+      at async TransformPluginContext.transform (file:///Users/chuanhu9/devs/jigu/node_modules/.pnpm/vite@7.1.5_@types+node@24.4.0_jiti@2.5.1_lightningcss@1.30.1_yaml@2.8.1/node_modules/vite/dist/node/chunks/dep-M_KD0XSK.js:30022:4)
+      at async file:///Users/chuanhu9/devs/jigu/node_modules/.pnpm/vite-plugin-inspect@11.3.3_@nuxt+kit@4.1.2_vite@7.1.5_@types+node@24.4.0_jiti@2.5.1_lightningcss@1.30.1_yaml@2.8.1_/node_modules/vite-plugin-inspect/dist/shared/vite-plugin-inspect.BzUKaD4x.mjs:403:17
+      at async EnvironmentPluginContainer.transform (file:///Users/chuanhu9/devs/jigu/node_modules/.pnpm/vite@7.1.5_@types+node@24.4.0_jiti@2.5.1_lightningcss@1.30.1_yaml@2.8.1/node_modules/vite/dist/node/chunks/dep-M_KD0XSK.js:31325:14)
+      at async loadAndTransform (file:///Users/chuanhu9/devs/jigu/node_modules/.pnpm/vite@7.1.5_@types+node@24.4.0_jiti@2.5.1_lightningcss@1.30.1_yaml@2.8.1/node_modules/vite/dist/node/chunks/dep-M_KD0XSK.js:26407:26)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:48:19 AM[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m12:48:19 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m Re-optimizing dependencies because vite config has changed
+[2m12:48:19 AM[22m [36m[1m[vite][22m[39m server restarted.
+[31m(!) Failed to run dependency scan. Skipping dependency pre-bundling. Error: The following dependencies are imported but could not be resolved:
+
+  [36m@jigu/shared/schemas[31m [37m[2m(imported by /Users/chuanhu9/devs/jigu/apps/frontend/src/views/sign-in/index.vue?id=0)[22m[31m
+
+Are they installed?
+    at file:///Users/chuanhu9/devs/jigu/node_modules/.pnpm/vite@7.1.5_@types+node@24.4.0_jiti@2.5.1_lightningcss@1.30.1_yaml@2.8.1/node_modules/vite/dist/node/chunks/dep-M_KD0XSK.js:11130:33
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async file:///Users/chuanhu9/devs/jigu/node_modules/.pnpm/vite@7.1.5_@types+node@24.4.0_jiti@2.5.1_lightningcss@1.30.1_yaml@2.8.1/node_modules/vite/dist/node/chunks/dep-M_KD0XSK.js:34823:15[39m
+[2m12:48:21 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32m✨ new dependencies optimized: [33m@unhead/vue/client, pinia-plugin-persistedstate[32m[39m
+[2m12:48:21 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32m✨ optimized dependencies changed. reloading[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:48:22 AM[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "@jigu/shared/schemas" from "src/views/sign-in/index.vue". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36m/Users/chuanhu9/devs/jigu/apps/frontend/src/views/sign-in/index.vue[39m:4:34
+[33m  18 |  import { default as __unplugin_components_0 } from '/Users/chuanhu9/devs/jigu/node_modules/.pnpm/@nuxt+ui@3.3.3_@babe...
+  19 |  import { defineComponent as _defineComponent } from "vue";
+  20 |  import { SignInInputSchema } from "@jigu/shared/schemas";
+     |                                     ^
+  21 |  import { authClient } from "@/libs/auth-client";
+  22 |  [39m
+      at TransformPluginContext._formatLog (file:///Users/chuanhu9/devs/jigu/node_modules/.pnpm/vite@7.1.5_@types+node@24.4.0_jiti@2.5.1_lightningcss@1.30.1_yaml@2.8.1/node_modules/vite/dist/node/chunks/dep-M_KD0XSK.js:31527:43)
+      at TransformPluginContext.error (file:///Users/chuanhu9/devs/jigu/node_modules/.pnpm/vite@7.1.5_@types+node@24.4.0_jiti@2.5.1_lightningcss@1.30.1_yaml@2.8.1/node_modules/vite/dist/node/chunks/dep-M_KD0XSK.js:31524:14)
+      at normalizeUrl (file:///Users/chuanhu9/devs/jigu/node_modules/.pnpm/vite@7.1.5_@types+node@24.4.0_jiti@2.5.1_lightningcss@1.30.1_yaml@2.8.1/node_modules/vite/dist/node/chunks/dep-M_KD0XSK.js:29996:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///Users/chuanhu9/devs/jigu/node_modules/.pnpm/vite@7.1.5_@types+node@24.4.0_jiti@2.5.1_lightningcss@1.30.1_yaml@2.8.1/node_modules/vite/dist/node/chunks/dep-M_KD0XSK.js:30054:32
+      at async Promise.all (index 6)
+      at async TransformPluginContext.transform (file:///Users/chuanhu9/devs/jigu/node_modules/.pnpm/vite@7.1.5_@types+node@24.4.0_jiti@2.5.1_lightningcss@1.30.1_yaml@2.8.1/node_modules/vite/dist/node/chunks/dep-M_KD0XSK.js:30022:4)
+      at async file:///Users/chuanhu9/devs/jigu/node_modules/.pnpm/vite-plugin-inspect@11.3.3_@nuxt+kit@4.1.2_vite@7.1.5_@types+node@24.4.0_jiti@2.5.1_lightningcss@1.30.1_yaml@2.8.1_/node_modules/vite-plugin-inspect/dist/shared/vite-plugin-inspect.BzUKaD4x.mjs:403:17
+      at async EnvironmentPluginContainer.transform (file:///Users/chuanhu9/devs/jigu/node_modules/.pnpm/vite@7.1.5_@types+node@24.4.0_jiti@2.5.1_lightningcss@1.30.1_yaml@2.8.1/node_modules/vite/dist/node/chunks/dep-M_KD0XSK.js:31325:14)
+      at async loadAndTransform (file:///Users/chuanhu9/devs/jigu/node_modules/.pnpm/vite@7.1.5_@types+node@24.4.0_jiti@2.5.1_lightningcss@1.30.1_yaml@2.8.1/node_modules/vite/dist/node/chunks/dep-M_KD0XSK.js:26407:26)
+[2m12:48:22 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32m✨ new dependencies optimized: [33mbetter-auth/vue[32m[39m
+[2m12:48:22 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32m✨ optimized dependencies changed. reloading[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:48:22 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/assets/css/main.css[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:48:23 AM[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "@jigu/shared/schemas" from "src/views/sign-in/index.vue". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36m/Users/chuanhu9/devs/jigu/apps/frontend/src/views/sign-in/index.vue[39m:4:34
+[33m  18 |  import { default as __unplugin_components_0 } from '/Users/chuanhu9/devs/jigu/node_modules/.pnpm/@nuxt+ui@3.3.3_@babe...
+  19 |  import { defineComponent as _defineComponent } from "vue";
+  20 |  import { SignInInputSchema } from "@jigu/shared/schemas";
+     |                                     ^
+  21 |  import { authClient } from "@/libs/auth-client";
+  22 |  [39m
+      at TransformPluginContext._formatLog (file:///Users/chuanhu9/devs/jigu/node_modules/.pnpm/vite@7.1.5_@types+node@24.4.0_jiti@2.5.1_lightningcss@1.30.1_yaml@2.8.1/node_modules/vite/dist/node/chunks/dep-M_KD0XSK.js:31527:43)
+      at TransformPluginContext.error (file:///Users/chuanhu9/devs/jigu/node_modules/.pnpm/vite@7.1.5_@types+node@24.4.0_jiti@2.5.1_lightningcss@1.30.1_yaml@2.8.1/node_modules/vite/dist/node/chunks/dep-M_KD0XSK.js:31524:14)
+      at normalizeUrl (file:///Users/chuanhu9/devs/jigu/node_modules/.pnpm/vite@7.1.5_@types+node@24.4.0_jiti@2.5.1_lightningcss@1.30.1_yaml@2.8.1/node_modules/vite/dist/node/chunks/dep-M_KD0XSK.js:29996:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///Users/chuanhu9/devs/jigu/node_modules/.pnpm/vite@7.1.5_@types+node@24.4.0_jiti@2.5.1_lightningcss@1.30.1_yaml@2.8.1/node_modules/vite/dist/node/chunks/dep-M_KD0XSK.js:30054:32
+      at async Promise.all (index 6)
+      at async TransformPluginContext.transform (file:///Users/chuanhu9/devs/jigu/node_modules/.pnpm/vite@7.1.5_@types+node@24.4.0_jiti@2.5.1_lightningcss@1.30.1_yaml@2.8.1/node_modules/vite/dist/node/chunks/dep-M_KD0XSK.js:30022:4)
+      at async file:///Users/chuanhu9/devs/jigu/node_modules/.pnpm/vite-plugin-inspect@11.3.3_@nuxt+kit@4.1.2_vite@7.1.5_@types+node@24.4.0_jiti@2.5.1_lightningcss@1.30.1_yaml@2.8.1_/node_modules/vite-plugin-inspect/dist/shared/vite-plugin-inspect.BzUKaD4x.mjs:403:17
+      at async EnvironmentPluginContainer.transform (file:///Users/chuanhu9/devs/jigu/node_modules/.pnpm/vite@7.1.5_@types+node@24.4.0_jiti@2.5.1_lightningcss@1.30.1_yaml@2.8.1/node_modules/vite/dist/node/chunks/dep-M_KD0XSK.js:31325:14)
+      at async loadAndTransform (file:///Users/chuanhu9/devs/jigu/node_modules/.pnpm/vite@7.1.5_@types+node@24.4.0_jiti@2.5.1_lightningcss@1.30.1_yaml@2.8.1/node_modules/vite/dist/node/chunks/dep-M_KD0XSK.js:26407:26)
+^C

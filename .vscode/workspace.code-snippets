@@ -7,7 +7,6 @@
     ],
     "description": "consola log"
   },
-
   "vue": {
     "scope": "vue",
     "prefix": "setup",

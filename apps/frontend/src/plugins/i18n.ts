@@ -1,5 +1,5 @@
-import en from "#/en.json";
-import zh_cn from "#/zh_cn.json";
+import en from "@jigu/frontend/locales/en.json";
+import zh_cn from "@jigu/frontend/locales/zh_cn.json";
 import { createI18n } from "vue-i18n";
 
 export type Schema = typeof en;
