@@ -1,7 +1,17 @@
 {
-  "eslint.workingDirectories": [
-    {
-      "mode": "auto"
-    }
-  ]
+  "editor.codeActionsOnSave": {
+    "source.fixAll.biome": "explicit",
+    "source.organizeImports.biome": "explicit",
+    "source.action.useSortedAttributes.biome": "explicit",
+    "source.action.useSortedProperties.biome": "explicit"
+  },
+  "[typescript][javascript][typescriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "files.associations": {
+    "*.css": "tailwindcss",
+    "settings.json": "jsonc"
+  },
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
