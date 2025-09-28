@@ -1,3 +1,3 @@
-export function createInjectTokens(provider: string): symbol {
-  return Symbol(`JIGU_${provider}`);
+export function createInjectTokens(provider: string): string {
+  return `JIGU_${provider.toUpperCase()}`;
 }

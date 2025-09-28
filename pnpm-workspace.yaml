@@ -2,11 +2,7 @@ packages:
   - apps/*
   - packages/*
 
-hoist: true
-
-hoistWorkspacePackages: true
-
 onlyBuiltDependencies:
-  - '@tailwindcss/oxide'
+  - "@tailwindcss/oxide"
   - lefthook
   - sharp
