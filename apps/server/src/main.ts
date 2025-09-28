@@ -3,8 +3,17 @@ import { AppModule } from "@/app.module";
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, {
-    bodyParser: false, // Required for Better Auth
+    bodyParser: false,
+    cors: {
+      methods: "*",
+      allowedHeaders: "*",
+      origin: "http://localhost:10000",
+      credentials: true,
+    },
   });
-  await app.listen(process.env.PORT ?? 3001);
+
+  app.setGlobalPrefix("/api");
+
+  await app.listen(process.env.PORT ?? 10001);
 }
 bootstrap();

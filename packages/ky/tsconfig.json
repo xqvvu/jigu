@@ -8,7 +8,11 @@
     "isolatedModules": true,
     "declaration": true,
     "isolatedDeclarations": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
   "include": ["src"]
 }
