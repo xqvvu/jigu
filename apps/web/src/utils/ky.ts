@@ -1,3 +1,3 @@
-import { createKyClient } from "@jigu/ky/client";
+import { createWebKy } from "@jigu/ky/web";
 
-export const ky = createKyClient(process.env.NEXT_PUBLIC_BASE_API);
+export const ky = createWebKy(process.env.NEXT_PUBLIC_BASE_API);

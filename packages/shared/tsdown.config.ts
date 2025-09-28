@@ -2,8 +2,7 @@ import { defineConfig } from "tsdown";
 
 export default defineConfig({
   entry: {
-    web: "src/web.ts",
-    server: "src/server.ts",
+    index: "src/index.ts",
   },
   format: "esm",
   clean: true,

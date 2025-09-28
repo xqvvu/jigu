@@ -3,10 +3,26 @@ packages:
   - packages/*
 
 onlyBuiltDependencies:
-  - '@nestjs/core'
-  - '@tailwindcss/oxide'
+  - "@nestjs/core"
+  - "@tailwindcss/oxide"
   - better-sqlite3
   - esbuild
   - lefthook
   - sharp
   - unrs-resolver
+
+catalog:
+  "@biomejs/biome": "2.2.4"
+  lefthook: "^1.13.4"
+  turbo: "^2.5.8"
+
+catalogs:
+  shared:
+    "@types/node": ^24.5.2
+    tsdown: ^0.15.5
+    typescript: ^5.9.2
+    zod: ^4.1.11
+  server:
+    drizzle-kit: "^0.31.5"
+    drizzle-orm: "^0.44.5"
+    drizzle-zod: "^0.8.3"

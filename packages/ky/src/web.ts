@@ -8,7 +8,7 @@ import { beforeRequestCheckToken } from "@/hooks";
  * @param prefixUrl Base URL
  * @returns ky instance
  */
-export function createKyClient(prefixUrl?: string): KyInstance {
+export function createWebKy(prefixUrl?: string): KyInstance {
   return ky.extend({
     prefixUrl: prefixUrl || DEFAULT_PREFIX_URL,
     hooks: {

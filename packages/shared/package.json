@@ -2,13 +2,9 @@
   "name": "@jigu/ky",
   "type": "module",
   "exports": {
-    "./web": {
-      "types": "./dist/web.d.ts",
-      "default": "./dist/web.js"
-    },
-    "./server": {
-      "types": "./dist/server.d.ts",
-      "default": "./dist/server.js"
+    "./schema": {
+      "types": "./dist/schema/index.d.ts",
+      "default": "./dist/schema/index.js"
     }
   },
   "scripts": {
@@ -17,10 +13,13 @@
   },
   "devDependencies": {
     "@types/node": "catalog:shared",
+    "drizzle-kit": "catalog:server",
     "tsdown": "catalog:shared",
     "typescript": "catalog:shared"
   },
   "dependencies": {
-    "ky": "^1.11.0"
+    "drizzle-orm": "catalog:server",
+    "drizzle-zod": "catalog:server",
+    "zod": "catalog:shared"
   }
 }
