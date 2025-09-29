@@ -9,7 +9,12 @@ export default function Home() {
   return (
     <div>
       <div>
-        <Button>Click me</Button>
+        <Button
+          color="primary"
+          startContent={<div className="icon-[devicon--bun]"></div>}
+        >
+          Click me
+        </Button>
       </div>
 
       {users.length > 0 && (

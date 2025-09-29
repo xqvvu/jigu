@@ -1,6 +1,9 @@
 {
   "$schema": "https://biomejs.dev/schemas/2.2.4/schema.json",
   "extends": "//",
+  "files": {
+    "includes": ["!globals.css"]
+  },
   "linter": {
     "domains": {
       "next": "recommended",
