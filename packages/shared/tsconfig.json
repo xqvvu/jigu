@@ -3,15 +3,14 @@
     "module": "esnext",
     "moduleResolution": "bundler",
     "target": "esnext",
-    "noEmit": true,
     "strict": true,
     "isolatedModules": true,
     "skipLibCheck": true,
+    "baseUrl": "./",
     "paths": {
-      "#lib/*": ["./lib/*"],
-      "#drizzle/*": ["./drizzle/*"]
+      "~lib/*": ["src/lib/*"],
+      "~drizzle/*": ["src/drizzle/*"]
     }
   },
-  "include": ["**/*.ts"],
-  "exclude": ["tsdown.config.ts"]
+  "include": ["src"]
 }

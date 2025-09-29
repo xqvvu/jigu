@@ -1,5 +1,6 @@
 "use client";
 
+import { Button } from "@heroui/react";
 import { useUsers } from "@/hooks/users/use-users";
 
 export default function Home() {
@@ -7,6 +8,10 @@ export default function Home() {
 
   return (
     <div>
+      <div>
+        <Button>Click me</Button>
+      </div>
+
       {users.length > 0 && (
         <ul>
           {users.map((user) => (

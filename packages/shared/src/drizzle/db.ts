@@ -1,6 +1,6 @@
 import type { PostgresJsDatabase } from "drizzle-orm/postgres-js";
 import { drizzle } from "drizzle-orm/postgres-js";
-import * as schema from "#drizzle/schema";
+import * as schema from "~drizzle/schema";
 
 export const db = drizzle({
   schema,

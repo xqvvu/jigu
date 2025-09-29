@@ -2,29 +2,30 @@ packages:
   - apps/*
   - packages/*
 
+catalog:
+  '@biomejs/biome': 2.2.4
+  lefthook: ^1.13.4
+  turbo: ^2.5.8
+
+catalogs:
+  server:
+    better-auth: ^1.3.18
+    drizzle-kit: ^0.31.5
+    drizzle-orm: ^0.44.5
+    drizzle-zod: ^0.8.3
+    postgres: ^3.4.7
+  shared:
+    '@types/node': ^24.5.2
+    tsup: ^8.5.0
+    typescript: ^5.9.2
+    zod: ^4.1.11
+
 onlyBuiltDependencies:
-  - "@nestjs/core"
-  - "@tailwindcss/oxide"
+  - '@heroui/shared-utils'
+  - '@nestjs/core'
+  - '@tailwindcss/oxide'
   - better-sqlite3
   - esbuild
   - lefthook
   - sharp
   - unrs-resolver
-
-catalog:
-  "@biomejs/biome": "2.2.4"
-  lefthook: "^1.13.4"
-  turbo: "^2.5.8"
-
-catalogs:
-  shared:
-    "@types/node": ^24.5.2
-    tsup: "^8.5.0"
-    typescript: ^5.9.2
-    zod: ^4.1.11
-  server:
-    better-auth: "^1.3.18"
-    drizzle-kit: "^0.31.5"
-    drizzle-orm: "^0.44.5"
-    drizzle-zod: "^0.8.3"
-    postgres: "^3.4.7"

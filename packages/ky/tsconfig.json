@@ -3,13 +3,10 @@
     "module": "esnext",
     "moduleResolution": "bundler",
     "target": "esnext",
-    "noEmit": true,
     "strict": true,
     "isolatedModules": true,
-    "declaration": true,
-    "isolatedDeclarations": true,
     "skipLibCheck": true,
-    "baseUrl": ".",
+    "baseUrl": "./",
     "paths": {
       "@/*": ["src/*"]
     }

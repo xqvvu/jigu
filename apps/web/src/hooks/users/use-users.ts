@@ -6,7 +6,6 @@ export function useUsers() {
     queryKey: ["users"],
     queryFn: fetchUsers,
   });
-  console.log(users);
 
   return { users };
 }
