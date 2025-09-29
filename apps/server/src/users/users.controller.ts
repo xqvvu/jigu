@@ -8,8 +8,8 @@ export class UsersController {
 
   @Get()
   getUsers() {
-    return this.usersService.getUsers();
-    // const users = [{ id: 1, name: "Jason" }];
-    // return R.ok(users);
+    // return this.usersService.getUsers();
+    const users = [{ id: 1, name: "Jason" }];
+    return R.ok(users);
   }
 }

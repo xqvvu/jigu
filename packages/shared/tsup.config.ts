@@ -1,9 +1,9 @@
-import { defineConfig } from "tsdown";
+import { defineConfig } from "tsup";
 
 export default defineConfig({
   entry: ["lib/*.ts", "schema/*.ts"],
   format: "esm",
-  dts: {
-    sourcemap: true,
-  },
+  dts: true,
+  clean: true,
+  sourcemap: true,
 });

@@ -19,7 +19,7 @@ catalog:
 catalogs:
   shared:
     "@types/node": ^24.5.2
-    tsdown: ^0.15.5
+    tsup: "^8.5.0"
     typescript: ^5.9.2
     zod: ^4.1.11
   server:
