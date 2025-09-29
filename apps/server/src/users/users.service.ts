@@ -1,6 +1,6 @@
+import { type Db } from "@jigu/shared/lib/db";
 import { Inject, Injectable } from "@nestjs/common";
 import { TOKENS } from "@/common/constants";
-import { type Db } from "@/drizzle/schema";
 
 @Injectable()
 export class UsersService {

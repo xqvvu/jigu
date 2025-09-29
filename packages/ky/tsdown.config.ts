@@ -6,7 +6,6 @@ export default defineConfig({
     server: "src/server.ts",
   },
   format: "esm",
-  clean: true,
   dts: {
     sourcemap: true,
   },

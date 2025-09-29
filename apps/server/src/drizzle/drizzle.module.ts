@@ -1,6 +1,6 @@
+import { db } from "@jigu/shared/lib/db";
 import { Module } from "@nestjs/common";
 import { TOKENS } from "@/common/constants";
-import { db } from "@/drizzle/db";
 
 @Module({
   providers: [

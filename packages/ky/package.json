@@ -13,7 +13,8 @@
   },
   "scripts": {
     "build:watch": "tsdown --watch",
-    "build": "tsdown"
+    "build": "tsdown",
+    "prepare": "tsdown"
   },
   "devDependencies": {
     "@types/node": "catalog:shared",

@@ -6,14 +6,12 @@
     "noEmit": true,
     "strict": true,
     "isolatedModules": true,
-    "declaration": true,
-    "isolatedDeclarations": true,
     "skipLibCheck": true,
-    "baseUrl": ".",
     "paths": {
-      "#lib/*": ["lib/*"],
-      "#schema/*": ["schema/*"]
+      "#lib/*": ["./lib/*"],
+      "#drizzle/*": ["./drizzle/*"]
     }
   },
-  "include": ["lib", "schema"]
+  "include": ["**/*.ts"],
+  "exclude": ["tsdown.config.ts"]
 }

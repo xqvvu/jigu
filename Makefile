@@ -28,3 +28,13 @@ server%:
 		-auth-secret) \
 		npx @better-auth/cli secret ;; \
 	esac
+
+shared%:
+	@case "$*" in \
+		-drizzle-generate) \
+			cd packages/shared || { echo "Failed to change directory to packages/shared"; exit 1; }; \
+			npx @better-auth/cli generate -y --output="schema/auth.ts"; \
+			cd ../../apps/server; \
+			npx drizzle-kit generate; \
+			cd ../.. ;; \
+	esac

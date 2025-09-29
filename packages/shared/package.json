@@ -1,15 +1,20 @@
 {
-  "name": "@jigu/ky",
+  "name": "@jigu/shared",
   "type": "module",
   "exports": {
-    "./schema": {
-      "types": "./dist/schema/index.d.ts",
-      "default": "./dist/schema/index.js"
+    "./schema/*": {
+      "types": "./dist/schema/*.d.ts",
+      "default": "./dist/schema/*.js"
+    },
+    "./lib/*": {
+      "types": "./dist/lib/*.d.ts",
+      "default": "./dist/lib/*.js"
     }
   },
   "scripts": {
     "build:watch": "tsdown --watch",
-    "build": "tsdown"
+    "build": "tsdown",
+    "prepare": "tsdown"
   },
   "devDependencies": {
     "@types/node": "catalog:shared",
@@ -18,8 +23,10 @@
     "typescript": "catalog:shared"
   },
   "dependencies": {
+    "better-auth": "catalog:server",
     "drizzle-orm": "catalog:server",
     "drizzle-zod": "catalog:server",
+    "postgres": "catalog:server",
     "zod": "catalog:shared"
   }
 }

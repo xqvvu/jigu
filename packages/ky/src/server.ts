@@ -16,3 +16,5 @@ export function createServerKy(prefixUrl?: string): KyInstance {
     timeout: TIMEOUT,
   });
 }
+
+export type { Result } from "@/types";
