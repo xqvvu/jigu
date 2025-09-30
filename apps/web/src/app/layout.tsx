@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Noto_Sans_SC, Outfit } from "next/font/google";
-import "./globals.css";
-import { NextIntlClientProvider } from "next-intl";
 import { Providers } from "@/app/providers";
+
+import "./globals.css";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -33,9 +33,7 @@ export default async function RootLayout({
       />
 
       <body className={`${outfit.variable} ${notoSansSC.variable} antialiased`}>
-        <NextIntlClientProvider>
-          <Providers>{children}</Providers>
-        </NextIntlClientProvider>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

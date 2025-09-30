@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@plugin "../hero.ts";
+@plugin "../lib/hero.ts";
 @plugin "@iconify/tailwind4" {
   scale: 1.2;
 }
