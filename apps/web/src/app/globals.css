@@ -1,7 +1,17 @@
 @import "tailwindcss";
-@plugin "./hero.ts";
+@plugin "../hero.ts";
 @plugin "@iconify/tailwind4" {
-  scale: 1.2
-};
+  scale: 1.2;
+}
 @source "../../../../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}";
 @custom-variant dark (&:is(.dark *));
+
+@theme {
+  --font-sans: var(--font-outfit), var(--font-noto-sans-sc), serif-sans;
+}
+
+body {
+  --font-sans: var(--font-outfit), var(--font-noto-sans-sc), serif-sans;
+
+  font-family: var(--font-sans);
+}

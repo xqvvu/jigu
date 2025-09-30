@@ -5,13 +5,11 @@
     "source.action.useSortedAttributes.biome": "explicit",
     "source.action.useSortedProperties.biome": "explicit"
   },
-  "[typescript][javascript][typescriptreact]": {
+  "[javascript][typescript][typescriptreact][css][json][jsonc]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "biomejs.biome"
   },
-  "files.associations": {
-    "*.css": "tailwindcss",
-    "settings.json": "jsonc"
-  },
+  "css.lint.unknownAtRules": "ignore",
+
   "typescript.tsdk": "node_modules/typescript/lib"
 }
