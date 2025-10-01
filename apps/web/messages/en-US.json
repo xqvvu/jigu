@@ -1,4 +1,20 @@
 {
+  "locale": {
+    "en-US": "English",
+    "zh-CN": "简体中文"
+  },
+
+  "auth": {
+    "SignIn": {
+      "sign_in": "Sign in",
+      "do_not_have_an_account": "Dont't have an account?",
+      "sign_up": "Sign up"
+    },
+    "SignUp": {
+      "sign_up": "Sign up"
+    }
+  },
+
   "Home": {
     "title": "Hi"
   }

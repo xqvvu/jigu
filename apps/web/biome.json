@@ -2,7 +2,6 @@
   "$schema": "https://biomejs.dev/schemas/2.2.4/schema.json",
   "extends": "//",
   "linter": {
-    "includes": [],
     "domains": {
       "next": "recommended",
       "react": "recommended"
@@ -10,6 +9,9 @@
     "rules": {
       "suspicious": {
         "noUnknownAtRules": "off"
+      },
+      "style": {
+        "useSelfClosingElements": "on"
       }
     }
   },

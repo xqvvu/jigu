@@ -11,5 +11,8 @@
   },
   "css.lint.unknownAtRules": "ignore",
 
+  "loccy.sourceLocale": "en-US",
+  "loccy.annotations.previewLocale": "zh-CN",
+
   "typescript.tsdk": "node_modules/typescript/lib"
 }

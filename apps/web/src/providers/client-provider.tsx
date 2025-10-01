@@ -14,7 +14,7 @@ const queryClient = new QueryClient({
   },
 });
 
-export function ClientProviders({ children }: PropsWithChildren) {
+export default function ClientProviders({ children }: PropsWithChildren) {
   return (
     <QueryClientProvider client={queryClient}>
       <HeroUIProvider>
