@@ -1,4 +1,5 @@
 import { useLocale, useTranslations } from "next-intl";
+import LoginForm from "@/app/(root)/login-form";
 import Icon from "@/components/icon";
 import LocaleSwitcher from "@/components/locale-switcher";
 import ThemeSwitcher from "@/components/theme-switcher";
@@ -14,6 +15,7 @@ export default function Home() {
       <LocaleSwitcher />
       <Icon className="icon-[solar--airbuds-charge-linear]" />
       <ThemeSwitcher />
+      <LoginForm />
     </div>
   );
 }

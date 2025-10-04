@@ -17,4 +17,4 @@ export function createServerKy(prefixUrl?: string): KyInstance {
   });
 }
 
-export type { Result } from "@/types";
+export type { ErrorResult, Result, SuccessResult } from "@/types";

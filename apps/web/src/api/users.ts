@@ -1,6 +1,6 @@
-import type { User } from "@jigu/shared/schema/user";
+import type { IUser } from "@jigu/shared/schema/users";
 import { ky } from "@/lib/ky";
 
 export function fetchUsers() {
-  return ky<User[]>("users").json();
+  return ky<IUser[]>("users").json();
 }

@@ -6,6 +6,7 @@ services:
     ports:
       - 5432:5432
     environment:
+      TZ: Asia/Shanghai
       POSTGRES_DB: jigu
       POSTGRES_PASSWORD: mypassword
     volumes:

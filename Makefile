@@ -3,6 +3,8 @@ DOCKER_COMPOSE_DIR := ./apps/server
 .PHONY: FORCE
 FORCE:
 
+dev:
+	pnpm run dev
 
 compose%:
 	@case "$*" in \
@@ -14,6 +16,9 @@ compose%:
 			docker compose \
 				-f $(DOCKER_COMPOSE_DIR)/compose.local.yml \
 				down ;; \
+		-clean) \
+			make compose-down; \
+			rm -rf apps/server/.docker ;; \
 	  -help|*) \
 			echo "  Usage:"; \
 			echo "  # Stable profile"; \
@@ -27,14 +32,13 @@ server%:
 	@case "$*" in \
 		-auth-secret) \
 		npx @better-auth/cli secret ;; \
-	esac
-
-shared%:
-	@case "$*" in \
 		-drizzle-generate) \
-			cd packages/shared || { echo "Failed to change directory to packages/shared"; exit 1; }; \
-			npx @better-auth/cli generate -y --output="schema/auth.ts"; \
-			cd ../../apps/server; \
+			cd apps/server || { echo "Failed to change directory to packages/shared"; exit 1; }; \
+			npx @better-auth/cli@latest generate -y --config="src/lib/auth.ts" --output="../../packages/shared/src/schema/auth.ts"; \
 			npx drizzle-kit generate; \
+			cd ../.. ;; \
+		-drizzle-migrate) \
+			cd apps/server; \
+			npx drizzle-kit migrate; \
 			cd ../.. ;; \
 	esac

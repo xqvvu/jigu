@@ -1,10 +1,10 @@
-type ErrorResult = {
+export type ErrorResult = {
   errcode: number;
   errmsg: string;
   status: "fail";
 };
 
-type SuccessResult<T = unknown> = {
+export type SuccessResult<T = unknown> = {
   message: string;
   status: "ok";
   code: number;

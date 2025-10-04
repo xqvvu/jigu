@@ -36,6 +36,7 @@
     "@types/node": "catalog:shared",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "better-auth": "catalog:shared",
     "tailwindcss": "^4",
     "typescript": "catalog:shared"
   }

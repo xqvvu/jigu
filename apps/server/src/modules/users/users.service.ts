@@ -1,12 +1,12 @@
-import { type Db } from "@jigu/shared/lib/db";
+import type { Database } from "@jigu/shared/schema";
 import { Inject, Injectable } from "@nestjs/common";
-import { TOKENS } from "@/common/constants";
+import { Tokens } from "@/lib/constants";
 
 @Injectable()
 export class UsersService {
   constructor(
-    @Inject(TOKENS.DRIZZLE)
-    private readonly db: Db,
+    @Inject(Tokens.DATABASE)
+    private readonly db: Database,
   ) {}
 
   getUsers() {

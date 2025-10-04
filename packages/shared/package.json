@@ -2,17 +2,21 @@
   "name": "@jigu/shared",
   "type": "module",
   "exports": {
+    "./lib/*": {
+      "types": "./dist/lib/*.d.ts",
+      "default": "./dist/lib/*.js"
+    },
     "./schema/*": {
       "types": "./dist/schema/*.d.ts",
       "default": "./dist/schema/*.js"
     },
-    "./lib/*": {
-      "types": "./dist/lib/*.d.ts",
-      "default": "./dist/lib/*.js"
+    "./schema": {
+      "types": "./dist/schema/index.d.ts",
+      "default": "./dist/schema/index.js"
     }
   },
   "scripts": {
-    "dev": "tsup --watch",
+    "build:watch": "tsup --watch",
     "build": "tsup",
     "prepare": "tsup"
   },
@@ -23,10 +27,11 @@
     "typescript": "catalog:shared"
   },
   "dependencies": {
-    "better-auth": "catalog:server",
+    "better-auth": "catalog:shared",
     "drizzle-orm": "catalog:server",
     "drizzle-zod": "catalog:server",
     "postgres": "catalog:server",
+    "uuid": "^13.0.0",
     "zod": "catalog:shared"
   }
 }

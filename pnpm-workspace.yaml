@@ -9,13 +9,13 @@ catalog:
 
 catalogs:
   server:
-    better-auth: ^1.3.18
     drizzle-kit: ^0.31.5
     drizzle-orm: ^0.44.5
     drizzle-zod: ^0.8.3
     postgres: ^3.4.7
   shared:
     "@types/node": ^24.5.2
+    better-auth: ^1.3.18
     tsup: ^8.5.0
     typescript: ^5.9.2
     zod: ^4.1.11
@@ -23,6 +23,7 @@ catalogs:
 onlyBuiltDependencies:
   - "@heroui/shared-utils"
   - "@nestjs/core"
+  - "@scarf/scarf"
   - "@tailwindcss/oxide"
   - better-sqlite3
   - esbuild
